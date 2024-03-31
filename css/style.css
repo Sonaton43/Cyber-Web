@@ -415,12 +415,12 @@ section {
   align-items: center;
   flex-direction: column;
   background: var(--primary-text);
-  padding: 50px 0;
+  padding: 0 0 50px 0;
 }
 .wrapper h2 {
   color: var(--primary-color);
   font-size: 3em;
-  margin: 10px 0;
+  margin: 50px 0 10px 0;
   text-align: center;
   font-weight: 500;
 }
@@ -434,7 +434,7 @@ section {
   width: 1000px;
   margin-top: 10px;
 }
-.card {
+.wrapper .card {
   min-height: 220px;
   width: 320px;
   padding: 10px 30px;
@@ -448,32 +448,32 @@ section {
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
   transition: 3s;
 }
-.card > .i {
+.wrapper .card > .i {
   margin: 20px;
   font-size: 35px;
   color: var(--secondary-color);
 }
-.card h3 {
+.wrapper .card h3 {
   font-size: 26px;
   margin-bottom: 12px;
   font-weight: 400;
   text-align: center;
 }
-.card p {
-  text-align: justify;
+.wrapper .card p {
+  font-size: 1.2vw;
 }
-.card:hover {
+.wrapper .card:hover {
   transition: none;
 }
-.card:hover .i,
-.card:hover p {
+.wrapper .card:hover .i,
+.wrapper .card:hover p {
   color: var(--primary-text);
 }
-.card:hover h3 {
+.wrapper .card:hover h3 {
   font-weight: bolder;
   color: var(--primary-text);
 }
-.card:nth-child(1):hover {
+.wrapper .card:nth-child(1):hover {
   background: linear-gradient(
       45deg,
       rgba(18, 219, 0, 0.856) 0%,
@@ -482,7 +482,7 @@ section {
     url("../image/s.jpg");
   background-size: cover;
 }
-.card:nth-child(2):hover {
+.wrapper .card:nth-child(2):hover {
   background: linear-gradient(
       45deg,
       rgba(18, 219, 0, 0.856) 0%,
@@ -491,7 +491,7 @@ section {
     url("../image/s.jpg");
   background-size: cover;
 }
-.card:nth-child(3):hover {
+.wrapper .card:nth-child(3):hover {
   background: linear-gradient(
       45deg,
       rgba(18, 219, 0, 0.856) 0%,
@@ -500,7 +500,7 @@ section {
     url("../image/s.jpg");
   background-size: cover;
 }
-.card:nth-child(4):hover {
+.wrapper .card:nth-child(4):hover {
   background: linear-gradient(
       45deg,
       rgba(18, 219, 0, 0.856) 0%,
@@ -509,7 +509,7 @@ section {
     url("../image/s.jpg");
   background-size: cover;
 }
-.card:nth-child(5):hover {
+.wrapper .card:nth-child(5):hover {
   background: linear-gradient(
       45deg,
       rgba(18, 219, 0, 0.856) 0%,
@@ -518,7 +518,7 @@ section {
     url("../image/s.jpg");
   background-size: cover;
 }
-.card:nth-child(6):hover {
+.wrapper .card:nth-child(6):hover {
   background: linear-gradient(
       45deg,
       rgba(18, 219, 0, 0.856) 0%,
@@ -551,8 +551,12 @@ section {
   padding: 0;
 }
 @media (max-width: 991px) {
+  .wrapper .card p {
+    font-size: 16px;
+  }
   .wrapper {
     padding: 25px;
+    margin: 0 0 30px 0;
   }
   .wrapper h2 {
     padding: 2em;
@@ -562,12 +566,23 @@ section {
     flex-direction: column;
     width: 100%;
   }
-  .card {
+  .wrapper .card {
     min-width: 300px;
     margin: 10px auto;
   }
 }
 @media (max-width: 778px) {
+  .wrapper{
+    margin: 0 0 50px 0;
+    padding: 0 25px;
+  }
+  .wrapper h2 {
+    font-size: 1.9em;
+    padding: 0;
+  }
+  .wrapper .card p {
+    font-size: 16px;
+  }
   .t-card {
     width: 33%;
     margin: 10px 0;
@@ -588,7 +603,7 @@ section {
 .partner .container{
   padding: 0;
 }
-h2{
+.partner .container h2{
   font-size: 3em;
   padding-top: 30px;
   text-align: center;
@@ -716,7 +731,7 @@ h2{
 /*==============Our Partner Section CSS End================*/
 
 /*==============Prduct Overview Section CSS Start================*/
-.product-overview {
+/* .product-overview {
   margin: 0;
   padding: 0;
   background: var(--primary-text);
@@ -762,11 +777,23 @@ h2{
   margin-right: -200px;
   box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.9);
 }
+.prdct-textr h2{
+  color: var(--primary-color);
+  font-size: 30px;
+}
+.prdct-textr p{
+  text-align: justify;
+  font-size: 15px;
+  padding: 10px;
+}
 .prdct-text h2{
   padding-top: 5px;
+  color: var(--primary-color);
+  font-size: 30px;
 }
 .prdct-text p{
   text-align: justify;
+  font-size: 15px;
   padding: 10px;
 }
 @media(max-width:991px){
@@ -798,8 +825,228 @@ h2{
     margin-left: 0;
     box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.2);
   }
+} */
+.product{
+  width: 100%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 30px 10px;
+  padding: 30px;
+  overflow-x: hidden;
+  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.2);
+}
+.ph2{
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  text-align: center;
+  font-weight: 500;
+}
+.product .imgwrapper{
+  overflow: hidden;
+}
+.product .imgwrapper img{
+  width: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.product .imgwrapper:hover img{
+  transform: scale(1.25);
+}
+.product .contentwrpper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  overflow: hidden;
+}
+.product .contentwrpper h2{
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  text-align: left;
+}
+.product .contentwrpper p{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+}
+@media(max-width:991px){
+  .product{
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    padding: 20px;
+  }
+  .product .contentwrpper{
+    padding-left: 0;
+  }
+  .product .contentwrpper p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+@media(max-width:778px){
+  .product{
+    grid-gap: 20px;
+    padding: 15px;
+    margin: 20px 0;
+  }
+  .product .contentwrpper p{
+    font-size: 16px;
+  }
+  .product .contentwrpper h2{
+    font-size: 24px;
+  }
+  .product .imgwrapper img{
+    width: 100%;
+    min-height: auto;
+    object-fit: cover;
+    transition: 0.3s;
+  }
 }
 /*==============Prduct Overview Section CSS End================*/
+
+/*==============Our Vision Section CSS End================*/
+.vision{
+  background: var(--primary-color);
+  max-height: 400px;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 0;
+}
+.vision > .container{
+  margin: 0;
+  padding: 0;
+}
+.vision > .container > .content{
+  position: relative;
+  display: inline-flex;
+}
+.vision .container .img-box{
+  transform: translateY(-8%);
+  max-width: 380px;
+  min-width: 360px;
+  height: 480px;
+  border-radius: 20px;
+}
+.vision .container img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.text-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.content-wrapper{
+  margin-top: -100px;
+  padding: 0;
+}
+.text-wrap h2{
+  font-size: 3em;
+  color: var(--primary-text);
+  padding-top: 50px;
+  text-align: center;
+  font-weight: 500;
+}
+.text-wrap p{
+  padding: 10px 50px;
+  color: var(--primary-text);
+  font-size: 18px;
+}
+.text-wrap .content-wrapper h2{
+  text-align: left;
+  padding-left: 50px;
+}
+.text-wrap .content-wrapper h2 span .ic{
+  color: var(--secondary-color);
+}
+@media(max-width:991px){
+  .vision{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 100%;
+  }
+  .vision > .container > .content{
+    position: relative;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    height: 100%;
+  }
+  .vision .container .img-box{
+    max-width: 100%;
+    min-width: 720px;
+    width: 100%;
+    height: 100%;
+    max-height: 480px;
+    overflow: hidden;
+    padding-top: 50px;
+  }
+  .vision .container img{
+    width: 100%;
+    height: 100%;
+  }
+  .text-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .content-wrapper{
+    margin-top: -30px;
+    padding: 0;
+  }
+  .text-wrap p{
+    padding: 0 0;
+    color: var(--primary-text);
+    font-size: 18px;
+  }
+  .text-wrap .content-wrapper h2{
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .vision{
+    padding: 0 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .vision .container .img-box{
+    max-width: 100%;
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
+    max-height: 380;
+    overflow: hidden;
+    padding-top: 50px;
+  }
+  .vision .container img{
+    width: 100%;
+    height: 100%;
+  }
+  .content-wrapper{
+    margin-top: -60px;
+    padding: 0;
+  }
+}
+/*==============Our Vision Section CSS End================*/
 
 /*==============Footer Section CSS Start================*/
 ul {
@@ -871,11 +1118,16 @@ ul {
   margin-right: 15px;
 }
 .footer-social-icon .i1 {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   text-align: center;
   line-height: 38px;
   border-radius: 50%;
+}
+.footer-social-icon .i1:hover{
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--primary-text);  
 }
 /* .facebook-bg{
   background: #3B5998;
@@ -915,6 +1167,9 @@ ul {
   color: var(--primary-text);
   text-transform: capitalize;
   text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
 }
 .subscribe-form {
   position: relative;
