@@ -408,96 +408,8 @@ section {
 /*==============Video & Text Section CSS End==============*/
 
 /*==============Our Services Section CSS Start==============*/
-/* .wrapper {
-  font-family: titillium-web, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: var(--primary-text);
-  padding: 0 0 50px 0;
-}
-.wrapper h2 {
-  color: var(--primary-color);
-  font-size: 3em;
-  margin: 50px 0 10px 0;
-  text-align: center;
-  font-weight: 500;
-}
-.wrapper > p {
-  font-size: 18px;
-}
-.content-box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 1000px;
-  margin-top: 10px;
-}
-.wrapper .card {
-  min-height: 220px;
-  width: 320px;
-  padding: 10px 30px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: var(--primary-text);
-  margin: 10px 4px;
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
-  transition: 3s;
-}
-.wrapper .card > .i {
-  margin: 20px;
-  font-size: 35px;
-  color: var(--secondary-color);
-}
-.wrapper .card h3 {
-  font-size: 26px;
-  margin-bottom: 12px;
-  font-weight: 400;
-  text-align: center;
-}
-.wrapper .card p {
-  font-size: 1.2vw;
-}
-.wrapper .card:hover {
-  transition: none;
-}
-.wrapper .card:hover .i,
-.wrapper .card:hover p {
-  color: var(--primary-text);
-}
-.wrapper .card:hover h3 {
-  font-weight: bolder;
-  color: var(--primary-text);
-}
-.trust-box {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: var(--primary-text);
-  border-bottom: 4px solid var(--secondary-color);
-  box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.3);
-}
-.t-card {
-  width: 110px;
-  padding: 5px;
-  justify-content: center;
-  text-align: center;
-  color: var(--secondary-color);
-}
-.t-card:not(:last-child) {
-  border-right: 2px solid var(--secondary-color);
-}
-.t-card p {
-  margin-top: 5px;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-} */
 .wrapper{
-  margin: 20px 0;
+  margin:  0;
 }
 .wrapper h2 {
   color: var(--primary-color);
@@ -505,6 +417,7 @@ section {
   margin: 30px 0 10px 0;
   text-align: center;
   font-weight: 500;
+  text-transform: uppercase;
 }
 .wrapper .cont{
   margin: auto;
@@ -525,9 +438,10 @@ section {
   display: flex;
 }
 .wrapper .s-card h3{
-  font-size: 1.25rem;
+  font-size: 1.11rem;
   font-weight: 600;
   padding: 5px 0;
+  text-transform: uppercase;
 }
 .wrapper .s-card .i{
   color: var(--secondary-color);
@@ -575,12 +489,64 @@ section {
   margin: 0;
   padding: 0;
 }
+@media(max-width:778px){
+  .t-card:nth-child(3) {
+    border: none;
+  }
+}
 
 
 /*==============Our Services Section CSS End================*/
 
+/*==============Our Services Section CSS End================*/
+.approch{
+  background-color: var(--primary-color);
+  height: 100%;
+  width: 100%;
+}
+.our-approch .cont{
+  margin: auto;
+  padding: auto;
+  width: 95%;
+}
+.our-approch h4{
+  color: var(--secondary-color);
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+}
+.our-approch h2{
+  font-size: 3em;
+  color: var(--primary-text);
+  margin: 0;
+  padding-top: 5px;
+}
+.our-approch p{
+  font-size: 1.rem;
+  color: var(--primary-text);
+  margin: 0;
+}
+.our-approch .i{
+  font-size: 8px;
+  padding: 3px;
+  color: var(--secondary-color);
+}
+
+.img-wrp img{
+  width: 100%;
+  border-radius: 30px 0 30px 0;
+}
+.text-wrp{
+  display: inline;
+  align-items: center;
+  justify-items: center;
+}
+/*==============Our Services Section CSS End================*/
+
 /*==============Our Partner Section CSS Start================*/
 .partner{
+  margin-top: 50px;
   background: var(--primary-color);
 }
 .partner .container{
