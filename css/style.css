@@ -408,7 +408,7 @@ section {
 /*==============Video & Text Section CSS End==============*/
 
 /*==============Our Services Section CSS Start==============*/
-.wrapper {
+/* .wrapper {
   font-family: titillium-web, sans-serif;
   display: flex;
   justify-content: center;
@@ -473,60 +473,6 @@ section {
   font-weight: bolder;
   color: var(--primary-text);
 }
-.wrapper .card:nth-child(1):hover {
-  background: linear-gradient(
-      45deg,
-      rgba(18, 219, 0, 0.856) 0%,
-      rgba(18, 219, 0, 0.856) 100%
-    ),
-    url("../image/s.jpg");
-  background-size: cover;
-}
-.wrapper .card:nth-child(2):hover {
-  background: linear-gradient(
-      45deg,
-      rgba(18, 219, 0, 0.856) 0%,
-      rgba(18, 219, 0, 0.856) 100%
-    ),
-    url("../image/s.jpg");
-  background-size: cover;
-}
-.wrapper .card:nth-child(3):hover {
-  background: linear-gradient(
-      45deg,
-      rgba(18, 219, 0, 0.856) 0%,
-      rgba(18, 219, 0, 0.856) 100%
-    ),
-    url("../image/s.jpg");
-  background-size: cover;
-}
-.wrapper .card:nth-child(4):hover {
-  background: linear-gradient(
-      45deg,
-      rgba(18, 219, 0, 0.856) 0%,
-      rgba(18, 219, 0, 0.856) 100%
-    ),
-    url("../image/s.jpg");
-  background-size: cover;
-}
-.wrapper .card:nth-child(5):hover {
-  background: linear-gradient(
-      45deg,
-      rgba(18, 219, 0, 0.856) 0%,
-      rgba(18, 219, 0, 0.856) 100%
-    ),
-    url("../image/s.jpg");
-  background-size: cover;
-}
-.wrapper .card:nth-child(6):hover {
-  background: linear-gradient(
-      45deg,
-      rgba(18, 219, 0, 0.856) 0%,
-      rgba(18, 219, 0, 0.856) 100%
-    ),
-    url("../image/s.jpg");
-  background-size: cover;
-}
 .trust-box {
   margin-top: 20px;
   padding: 10px;
@@ -549,51 +495,88 @@ section {
   text-align: center;
   margin: 0;
   padding: 0;
+} */
+.wrapper{
+  margin: 20px 0;
 }
-@media (max-width: 991px) {
-  .wrapper .card p {
-    font-size: 16px;
-  }
-  .wrapper {
-    padding: 25px;
-    margin: 0 0 30px 0;
-  }
-  .wrapper h2 {
-    padding: 2em;
-    font-weight: 600;
-  }
-  .content-box {
-    flex-direction: column;
-    width: 100%;
-  }
-  .wrapper .card {
-    min-width: 300px;
-    margin: 10px auto;
-  }
+.wrapper h2 {
+  color: var(--primary-color);
+  font-size: 3em;
+  margin: 30px 0 10px 0;
+  text-align: center;
+  font-weight: 500;
 }
-@media (max-width: 778px) {
-  .wrapper{
-    margin: 0 0 50px 0;
-    padding: 0 25px;
-  }
-  .wrapper h2 {
-    font-size: 1.9em;
-    padding: 0;
-  }
-  .wrapper .card p {
-    font-size: 16px;
-  }
-  .t-card {
-    width: 33%;
-    margin: 10px 0;
-  }
-  .t-card p {
-    font-size: 12px;
-  }
-  .t-card:nth-child(3) {
-    border: none;
-  }
+.wrapper .cont{
+  margin: auto;
+  padding: auto;
+  width: 95%;
 }
+.wrapper .s-card{
+  border-radius: 10px;
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid silver;
+  padding: 30px ;
+  position: relative;
+  margin: 10px 0;
+  transition: 0.3s ease;
+  transform: scaleY();
+}
+.col-xl-4{
+  display: flex;
+}
+.wrapper .s-card h3{
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 5px 0;
+}
+.wrapper .s-card .i{
+  color: var(--secondary-color);
+  font-size: 38px;
+  padding: 5px 0;
+}
+.wrapper .s-card p{
+  font-size: small;
+}
+.wrapper .s-card p span a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+.wrapper .s-card:hover .i,
+.wrapper .s-card:hover p span a{
+  color: var(--primary-text);
+}
+.wrapper .s-card:hover{
+  background: var(--secondary-color);
+  color: var(--primary-text);
+}
+.trust-box {
+  margin-top: 20px;
+  margin: 0 27px;
+  padding: 10px;
+  background-color: var(--primary-text);
+  border-bottom: 4px solid var(--secondary-color);
+  box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
+}
+.t-card {
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
+  color: var(--secondary-color);
+}
+.t-card:not(:last-child) {
+  border-right: 2px solid var(--secondary-color);
+}
+.t-card p {
+  margin-top: 5px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
 /*==============Our Services Section CSS End================*/
 
 /*==============Our Partner Section CSS Start================*/
@@ -605,7 +588,7 @@ section {
 }
 .partner .container h2{
   font-size: 3em;
-  padding-top: 30px;
+  padding-top: 20px;
   text-align: center;
   font-weight: 500;
   color: var(--primary-text);
