@@ -23,7 +23,7 @@ font-family: 'Proxima Nova Condensed', sans-serif;
 
 /*==============Nav Menu Section CSS Start==============*/
 .header {
-  position: relative;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -1145,7 +1145,7 @@ ul {
   background-position: 100% 100%;
 }
 .footer-logo {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 .footer-logo img {
   max-width: 200px;
@@ -1198,7 +1198,8 @@ ul {
 }
 .footer-widget ul li {
   display: inline-block;
-  width: 50%;
+  width: 100%;
+  margin-bottom: 7px;
 }
 .footer-widget ul li a:hover {
   color: var(--secondary-color);
@@ -1209,7 +1210,6 @@ ul {
   text-decoration: none;
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 6px;
 }
 .subscribe-form {
   position: relative;
