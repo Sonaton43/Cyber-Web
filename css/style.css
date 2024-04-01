@@ -14,7 +14,7 @@
   padding: 0 15px;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Proxima Nova', Georgia, sans-serif;
 }
 
 /*==============Nav Menu Section CSS Start==============*/
@@ -53,6 +53,7 @@ body {
 .header .menu a {
   text-decoration: none;
   text-transform: capitalize;
+  font-family: "proxima-nova", sans-serif;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -467,7 +468,7 @@ section {
 }
 .trust-box {
   margin-top: 20px;
-  margin: 0 27px;
+  margin: 0 200px;
   padding: 10px;
   background-color: var(--primary-text);
   border-bottom: 4px solid var(--secondary-color);
@@ -489,16 +490,24 @@ section {
   margin: 0;
   padding: 0;
 }
+@media(max-width:991px){
+  .trust-box{
+    margin: 0 120px;
+  }
+}
 @media(max-width:778px){
   .t-card:nth-child(3) {
     border: none;
+  }
+  .trust-box{
+    margin: 0 30px;
   }
 }
 
 
 /*==============Our Services Section CSS End================*/
 
-/*==============Our Services Section CSS End================*/
+/*==============Our Approch Section CSS End================*/
 .approch{
   background-color: var(--primary-color);
   height: 100%;
@@ -542,11 +551,10 @@ section {
   align-items: center;
   justify-items: center;
 }
-/*==============Our Services Section CSS End================*/
+/*==============Our Approch Section CSS End================*/
 
 /*==============Our Partner Section CSS Start================*/
 .partner{
-  margin-top: 50px;
   background: var(--primary-color);
 }
 .partner .container{
@@ -680,101 +688,6 @@ section {
 /*==============Our Partner Section CSS End================*/
 
 /*==============Prduct Overview Section CSS Start================*/
-/* .product-overview {
-  margin: 0;
-  padding: 0;
-  background: var(--primary-text);
-}
-.product-overview > .container > .row > .col-md-12 > h2 {
-  color: var(--primary-color);
-  font-size: 3em;
-  text-align: center;
-  padding: 50px 0 30px 0;
-  font-weight: 500;
-}
-.product-wrapper {
-  margin: 0;
-  padding: 0 50px 50px 0;
-  display: inline-flex;
-}
-.prdct-img {
-  height: 100%;
-  width: 100%;
-}
-.prdct-img img {
-  height: 100%;
-  width: 100%;
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.9);
-}
-.prdct-text {
-  background: var(--primary-text);
-  padding: 20px;
-  height: auto;
-  width: 100%;
-  margin-top: 210px;
-  margin-left: -200px;
-  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.9);
-}
-.prdct-textr {
-  position: relative;
-  z-index: 1;
-  background: var(--primary-text);
-  padding: 20px;
-  height: auto;
-  width: 100%;
-  margin-top: 210px;
-  margin-right: -200px;
-  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.9);
-}
-.prdct-textr h2{
-  color: var(--primary-color);
-  font-size: 30px;
-}
-.prdct-textr p{
-  text-align: justify;
-  font-size: 15px;
-  padding: 10px;
-}
-.prdct-text h2{
-  padding-top: 5px;
-  color: var(--primary-color);
-  font-size: 30px;
-}
-.prdct-text p{
-  text-align: justify;
-  font-size: 15px;
-  padding: 10px;
-}
-@media(max-width:991px){
-  .product-wrapper {
-    display: block;
-    padding: 20px;
-    margin: 0;
-  }
-  .prdct-img img {
-    height: 100%;
-    width: 100%;
-    box-shadow: none;
-  }
-  .prdct-text {
-    background: var(--primary-text);
-    padding: 20px;
-    height: auto;
-    width: 100%;
-    margin-top: -10px;
-    margin-left: 0;
-    box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.2);
-  }
-  .prdct-textr {
-    background: var(--primary-text);
-    padding: 20px;
-    height: auto;
-    width: 100%;
-    margin-top: -10px;
-    margin-left: 0;
-    box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.2);
-  }
-} */
 .product{
   width: 100%;
   max-width: 1170px;
@@ -869,7 +782,7 @@ section {
   max-height: 400px;
   position: relative;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   padding: 0;
 }
 .vision > .container{
@@ -996,6 +909,163 @@ section {
   }
 }
 /*==============Our Vision Section CSS End================*/
+
+/*==============Our Partner Section CSS Start================*/
+.acknowledgments{
+  background: var(--primary-text);
+}
+.acknowledgments .container{
+  padding: 0;
+}
+.acknowledgments .container h2{
+  font-size: 3em;
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.acknowledgments .container p{
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+.acknowledgments-logos{
+  margin: 0;
+  padding: 20px 0 40px 0;
+}
+.acknowledgments .slide{
+  background: #f1f0f0;
+  border-radius: 10px;
+  width: 260;
+  height: 130px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.acknowledgments .slick-slide {
+    margin: 0px 20px;
+}
+
+.acknowledgments .slick-slide img {
+    width: 100%;
+    height: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.acknowledgments .slick-slide img:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(0);
+    transition: 0.3s ease;
+}
+
+.acknowledgments .slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.acknowledgments .slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.acknowledgments .slick-list:focus
+{
+    outline: none;
+}
+.acknowledgments .slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.acknowledgments .slick-slider .slick-track,
+.acknowledgments .slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.acknowledgments .slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.acknowledgments .slick-track:before,
+.acknowledgments .slick-track:after
+{
+    display: table;
+    content: '';
+}
+.acknowledgments .slick-track:after
+{
+    clear: both;
+}
+.acknowledgments .slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.acknowledgments .slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .acknowledgments .slick-slide
+{
+    float: right;
+}
+.acknowledgments .slick-slide img
+{
+    display: block;
+}
+.acknowledgments .slick-slide.slick-loading img
+{
+    display: none;
+}
+.acknowledgments .slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.acknowledgments .slick-initialized .slick-slide
+{
+    display: block;
+}
+.acknowledgments .slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.acknowledgments .slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.acknowledgments .slick-arrow.slick-hidden {
+    display: none;
+}
+/*==============Our Partner Section CSS End================*/
 
 /*==============Footer Section CSS Start================*/
 ul {
