@@ -14,7 +14,7 @@
   padding: 0 15px;
 }
 body {
-  font-family: 'Proxima Nova', Georgia, sans-serif;
+  font-family: "proxima-nova", sans-serif;
 }
 
 /*==============Nav Menu Section CSS Start==============*/
@@ -1148,15 +1148,6 @@ ul {
   transition: 0.3s;
   color: var(--primary-text);  
 }
-/* .facebook-bg{
-  background: #3B5998;
-}
-.twitter-bg{
-  background: #55ACEE;
-}
-.google-bg{
-  background: #DD4B39;
-} */
 .footer-widget-heading h3 {
   color: var(--primary-text);
   font-size: 20px;
@@ -1175,9 +1166,7 @@ ul {
 }
 .footer-widget ul li {
   display: inline-block;
-  float: left;
   width: 50%;
-  margin-bottom: 12px;
 }
 .footer-widget ul li a:hover {
   color: var(--secondary-color);
@@ -1187,8 +1176,8 @@ ul {
   text-transform: capitalize;
   text-decoration: none;
   font-size: 16px;
+  margin-bottom: 6px;
   line-height: 1.5;
-  font-weight: 700;
 }
 .subscribe-form {
   position: relative;
