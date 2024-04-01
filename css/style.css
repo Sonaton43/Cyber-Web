@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
 :root {
   --primary-color: #000;
   --secondary-color: #3ece1a;
@@ -14,12 +15,15 @@
   padding: 0 15px;
 }
 body {
-  font-family: "proxima-nova", sans-serif;
+/* Import Roboto font from Google Fonts */
+
+/* Apply Roboto font to your elements */
+font-family: 'Proxima Nova Condensed', sans-serif;
 }
 
 /*==============Nav Menu Section CSS Start==============*/
 .header {
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   width: 100%;
@@ -30,10 +34,17 @@ body {
 .header .content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
+  width: 100%;
 }
 .header .logo img {
   vertical-align: middle;
+}
+.header .menu{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 .header .menu .head {
   display: none;
@@ -53,10 +64,10 @@ body {
 .header .menu a {
   text-decoration: none;
   text-transform: capitalize;
-  font-family: "proxima-nova", sans-serif;
+  font-family: 'Proxima Nova Condensed', sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--primary-text);
   line-height: 1.5;
   display: block;
@@ -93,7 +104,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 260px;
+  width: 280px;
   padding: 1px 0;
   background-color: var(--secondary-color);
   color: var(--primary-text);
@@ -137,6 +148,7 @@ body {
   .header {
     padding: 12px 0;
   }
+  
   .header .menu {
     position: fixed;
     right: 0;
@@ -148,7 +160,15 @@ body {
     overflow-y: auto;
     z-index: 1;
     transform: translateX(100%);
+    display: block;
   }
+  .header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .header .menu.open {
     transform: none;
     transition: 0.9s ease;
@@ -337,6 +357,8 @@ section {
   color: var(--primary-text);
 }
 .box a.boxbtn {
+  text-decoration: none; /* Remove underlines */
+  cursor: pointer; /* Change cursor appearance */
   margin: 10px;
   position: relative;
   display: inline-block;
@@ -350,6 +372,8 @@ section {
   transition: background-size 0.7s, color 0.7s;
 }
 .box .btn1 {
+  text-decoration: none; /* Remove underlines */
+  cursor: pointer; /* Change cursor appearance */
   color: var(--primary-text);
   background-color: var(--secondary-color);
   background-image: linear-gradient(#fff, #fff);
@@ -360,12 +384,16 @@ section {
   background-image: linear-gradient(#3ece1a, #3ece1a);
 }
 .box .btn1:hover {
+  text-decoration: none; /* Remove underlines */
+  cursor: pointer; /* Change cursor appearance */
   background-size: 100% 100%;
   color: var(--secondary-color);
   cursor: pointer;
   transition: all 0.7s;
 }
 .box .btn2:hover {
+  text-decoration: none; /* Remove underlines */
+  cursor: pointer; /* Change cursor appearance */
   background-size: 100% 100%;
   color: var(--primary-text);
   cursor: pointer;
@@ -386,6 +414,8 @@ section {
     font-size: 20px;
   }
   .box a.boxbtn {
+    text-decoration: none; /* Remove underlines */
+    cursor: pointer; /* Change cursor appearance */
     padding: 8px 16px;
   }
 }
@@ -403,6 +433,8 @@ section {
     font-size: 14px;
   }
   .box a.boxbtn {
+    text-decoration: none; /* Remove underlines */
+    cursor: pointer; /* Change cursor appearance */
     padding: 6px 12px;
   }
 }
@@ -504,10 +536,9 @@ section {
   }
 }
 
-
 /*==============Our Services Section CSS End================*/
 
-/*==============Our Approch Section CSS End================*/
+/*==============Our Services Section CSS End================*/
 .approch{
   background-color: var(--primary-color);
   height: 100%;
@@ -551,18 +582,18 @@ section {
   align-items: center;
   justify-items: center;
 }
-/*==============Our Approch Section CSS End================*/
+/*==============Our Services Section CSS End================*/
 
 /*==============Our Partner Section CSS Start================*/
 .partner{
   background: var(--primary-color);
+  padding-bottom: 10px;
 }
 .partner .container{
   padding: 0;
 }
 .partner .container h2{
   font-size: 3em;
-  padding-top: 20px;
   text-align: center;
   font-weight: 500;
   color: var(--primary-text);
@@ -688,6 +719,7 @@ section {
 /*==============Our Partner Section CSS End================*/
 
 /*==============Prduct Overview Section CSS Start================*/
+/* Additional CSS for Product Overview Section */
 .product{
   width: 100%;
   max-width: 1170px;
@@ -774,6 +806,7 @@ section {
     transition: 0.3s;
   }
 }
+
 /*==============Prduct Overview Section CSS End================*/
 
 /*==============Our Vision Section CSS End================*/
@@ -910,7 +943,7 @@ section {
 }
 /*==============Our Vision Section CSS End================*/
 
-/*==============Our Partner Section CSS Start================*/
+/*==============Acknowledgments Section CSS Start================*/
 .acknowledgments{
   background: var(--primary-text);
 }
@@ -1065,7 +1098,7 @@ section {
 .acknowledgments .slick-arrow.slick-hidden {
     display: none;
 }
-/*==============Our Partner Section CSS End================*/
+/*==============Acknowledgments Section CSS End================*/
 
 /*==============Footer Section CSS Start================*/
 ul {
@@ -1128,7 +1161,6 @@ ul {
   display: block;
   font-size: 20px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
   margin-bottom: 10px;
 }
 .footer-social-icon a {
@@ -1176,8 +1208,8 @@ ul {
   text-transform: capitalize;
   text-decoration: none;
   font-size: 16px;
-  margin-bottom: 6px;
   line-height: 1.5;
+  margin-bottom: 6px;
 }
 .subscribe-form {
   position: relative;
@@ -1227,6 +1259,13 @@ ul {
   font-size: 14px;
   color: var(--primary-text);
 }
+.supp-img{
+  padding: 4px;
+}
+.supp-img img{
+  width: 100%;
+  height: 100%;
+}
 @media (max-width: 991px) {
   .single-cta .i {
     color: var(--secondary-color);
@@ -1248,6 +1287,27 @@ ul {
     color: var(--primary-text);
     font-size: 10px;
   }
+}
+@media print {
+    @page {
+        margin: 0;
+    }
+    
+    body {
+        margin: 0;
+    }
+
+    @page :first {
+        margin-top: 0;
+    }
+
+    @page {
+        size: auto;
+        margin-top: 0mm; 
+        margin-bottom: 0mm; 
+        margin-left: 0mm; 
+        margin-right: 0mm;
+    }
 }
 @media (max-width: 778px) {
   .footer-section {
