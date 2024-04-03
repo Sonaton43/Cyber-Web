@@ -25,6 +25,7 @@ font-family: 'Proxima Nova Condensed', sans-serif;
 /*==============Nav Menu Section CSS Start==============*/
 .header {
   position: fixed;
+  display: block;
   left: 0;
   top: 0;
   width: 100%;
@@ -1351,11 +1352,26 @@ ul {
 /*==============Data Driven Section CSS Start================*/
 /*---Data Driven--*/
 .data-driven{
+  position: relative;
+  background-color: #000;
   margin: 0;
-  padding: 50px 0;
-  background: var(--primary-color);
+  padding: 80px 0;
+}
+.data-driven::before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.4;
+  background: url(../image/dd.jpg) no-repeat center center;
+  background-size: cover;
 }
 .data-driven .text-content{
+  position: relative;
   padding-right: 10%;
 }
 .data-driven .text-content h2{
@@ -1377,6 +1393,7 @@ ul {
   font-weight: 400;
 }
 .data-driven .image-content img{
+  position: relative;
   padding: 20px;
   width: 100%;
   height: 100%;
@@ -1507,6 +1524,7 @@ ul {
 }
 .ai-wrapper .text-content h3{
   color: var(--primary-color);
+  text-align: left;
   font-size: 2.5em;
   font-weight: 400;
 }
@@ -1520,7 +1538,8 @@ ul {
 
 @media(max-width:991px){
   .data-driven{
-    padding: 30px;
+    margin: 0;
+    padding: 100px 30px;
   }
   .data-driven .text-content{
     padding-right: 0;
@@ -1540,11 +1559,26 @@ ul {
 /*==============Ptaas Section CSS Start================*/
 /*---Ptaas Head--*/
 .ptaas-head{
+  position: relative;
+  background-color: #000;
   margin: 0;
   padding: 70px 50px 0;
-  background: var(--third-color);
+}
+.ptaas-head::before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.4;
+  background: url(../image/pt.jpg) no-repeat center center;
+  background-size: cover;
 }
 .ptaas-head .text-content{
+  position: relative;
   padding-right: 10%;
 }
 .ptaas-head .text-content h2{
@@ -1566,6 +1600,7 @@ ul {
   font-weight: 400;
 }
 .ptaas-head .image-content img{
+  position: relative;
   padding: 20px;
   width: 100%;
   height: 100%;
@@ -1577,14 +1612,14 @@ ul {
 }
 .whatis-ptaas h2{
   font-size: 3em;
-  color: var(--third-color);
+  color: var(--primary-color);
   line-height: 50px;
   font-weight: 600;
 }
 .whatis-ptaas h4{
   font-weight: 500;
   font-size: 2em;
-  color: var(--third-color);
+  color: var(--primary-color);
   line-height: 30px;
 }
 .whatis-ptaas p{
@@ -1596,7 +1631,7 @@ ul {
 }
 .whatis-ptaas p span a{
   text-decoration: none;
-  color: var(--third-color);
+  color: var(--secondary-color);
   font-size: 1.1em;
 }
 /*---continue-ptaas--*/
@@ -1606,13 +1641,13 @@ ul {
 }
 .continue-ptaas h2{
   font-size: 3em;
-  color: var(--third-color);
+  color: var(--primary-color);
   line-height: 50px;
   font-weight: 600;
 }
 .continue-ptaas p{
   font-size: 1.1em;
-  color: var(--third-color);
+  color: var(--primary-color);
   line-height: 26px;
   font-weight: 400;
 }
@@ -1622,38 +1657,57 @@ ul {
 }
 /*Ptaas Continue*/
 .ptaas-process{
+  position: relative;
+  background-color: #000;
   margin: 0;
   padding: 50px 0;
-  background: var(--third-color);
+}
+.ptaas-process::before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.4;
+  background: url(../image/pt.jpg) no-repeat center center;
+  background-size: cover;
 }
 .ptaas-process h2{
   text-align: center;
   font-size: 3em;
+  position: relative;
   color: var(--primary-text);
   font-weight: 600;
 }
 .ptaas-process img{
+  position: relative;
   width: 50%;
 }
 .ptaas-process .ptaas-text h2{
   text-align: left;
   font-size: 3em;
   color: var(--primary-text);
+  position: relative;
   font-weight: 600;
 }
 .ptaas-process .ptaas-text h4{
+  position: relative;
   font-size: 1.6em;
   color: var(--primary-text);
   font-weight: 700;
 }
 .ptaas-process .ptaas-text p{
+  position: relative;
   text-align: left;
   font-size: 1.1em;
   color: var(--primary-text);
   font-weight: 400;
 }
 .ai-wrapper .custom-color{
-  color: var(--third-color);
+  color: var(--primary-color);
 }
 
 
