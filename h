@@ -51,9 +51,9 @@
 
   <!-- <link rel="stylesheet" href="css/slick.css" />
         <link rel="stylesheet" href="css/slick-theam.css" /> -->
-
-  <!-- <script src="js/jquery3.7.1.js"></script> -->
-  <!-- <script src="js/silck.js"></script> -->
+    
+        <!-- <script src="js/jquery3.7.1.js"></script> -->
+        <!-- <script src="js/silck.js"></script> -->
 
   <!--Nav Menu Section Start-->
   <header class="header">
@@ -70,12 +70,12 @@
         </div>
         <ul style="margin: 0; padding: 0">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="#">About</a></li>
           <li class="drpdwn">
             <a href="#">Solutions<i class="fa-solid fa-chevron-down"></i></a>
             <span class="ill"><i class="fa-solid fa-chevron-down"></i></span>
             <ul class="sub-menu">
-              <li><a href="ptaas.html"><span>PTaaS</span></a></li>
+              <li><a href="ptass.html"><span>PTaaS</span></a></li>
               <li><a href="#"><span>Red Teaming</span></a></li>
               <li><a href="data-driven.html"><span>Data Driven Technology</span></a></li>
               <li><a href="#"><span>Security Operations Center</span></a></li>
@@ -85,10 +85,9 @@
             </ul>
           </li>
           <li><a href="#partner">Partners</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">Blog</a></li>
           <li><a href="#">Under <i class="fa-solid fa-gear" style="font-size:20px;color:red"></i> Developement</a></li>
-          <li><button class="btn btn-danger btn-sm" style="font-size: 18px;" onclick="sendEmail()">Incident
-              Support</button></li>
+          <li><button class="btn btn-danger btn-sm" style="font-size: 18px;" onclick="sendEmail()">Incident Support</button></li>
         </ul>
       </div>
       <div class="header-right">
@@ -102,81 +101,76 @@
   </header>
   <!--Nav Menu Section End-->
 
-  <!--Main Content Start-->
-  <!--Data Header Start-->
-  <section class="data-driven">
-    <div class="container">
-      <div class="row d-flex flex-row justify-content-center align-items-center">
-        <div class="col-md-6 text-content">
-          <h2>Understand <br><span class="text-content-header"> Sentiment Analysis </span><br> for your brand's <br>
-            reputation</h2>
-          <p>Brandwatch’s sentiment analysis is based on <span class="text-content-bold"> cutting-edge AI research in
-              the fields of deep learning and natural language processing (NLP).</span></p>
-          <p>Our data scientists are pioneering the use of Transformer Architecture Language Models (AI models famous
-            for being able to suggest how any text should be completed) to determine sentiment in social data.</p>
-        </div>
-        <div class="col-md-6 image-content">
-          <img src="image/data-driven.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Data Header End-->
+    <!--Main Content Start-->
 
-  <!--Data Header Start-->
-  <section class="powerful-data">
-    <div class="container">
-      <div class="row d-flex flex-row justify-content-center align-items-center">
-        <div class="col-md-6 text-content">
-          <h2><span class="text-content-header"> Powerful </span> <br> Data Science</h2>
-          <p>Brandwatch's new and improved sentiment analysis provides cutting-edge new methodologies to provide:</p>
+    <!--Data Header Start-->
+    <section class="data-driven">
+        <div class="container">
+            <div class="row d-flex flex-row justify-content-center align-items-center">
+                <div class="col-md-6 text-content">
+                    <h2>Understand <br><span class="text-content-header"> Sentiment Analysis </span><br> for your brand's <br> reputation</h2>
+                    <p>Brandwatch’s sentiment analysis is based on <span class="text-content-bold"> cutting-edge AI research in the fields of deep learning and natural language processing (NLP).</span></p>
+                    <p>Our data scientists are pioneering the use of Transformer Architecture Language Models (AI models famous for being able to suggest how any text should be completed) to determine sentiment in social data.</p>
+                </div>
+                <div class="col-md-6 image-content">
+                    <img src="image/data-driven.png" alt="">
+                </div>
+            </div>
         </div>
-        <div class="col-md-6 text-content-2">
-          <p>
-            <span class="text-icon"><i class="i fa-solid fa-circle"></i></span>
-            <span class="text-head">Accuracy</span>
-            <br>
-            18% better accuracy on average across previously supported languages
-          </p>
-          <p>
-            <span class="text-icon"><i class="i fa-solid fa-circle"></i></span>
-            <span class="text-head">Even more supported languages</span>
-            <br>
-            16 new evaluated languages, with more to come (bringing the current total of officially supported languages
-            to 44)
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Data Header End-->
+        </section>
+    <!--Data Header End-->
 
-  <!--Data Monitor Start-->
-  <section class="data-monitor">
-    <div class="container">
-      <div class="row d-flex flex-row justify-content-center align-items-center">
-        <div class="col-md-6 image-content">
-          <img src="image//sco.png" alt="">
+    <!--Data Header Start-->
+    <section class="powerful-data">
+        <div class="container">
+            <div class="row d-flex flex-row justify-content-center align-items-center">
+                <div class="col-md-6 text-content">
+                    <h2><span class="text-content-header"> Powerful </span> <br> Data Science</h2>
+                    <p>Brandwatch's new and improved sentiment analysis provides cutting-edge new methodologies to provide:</p>
+                </div>
+                <div class="col-md-6 text-content-2">
+                    <p>
+                        <span class="text-icon"><i class="i fa-solid fa-circle"></i></span>
+                        <span class="text-head">Accuracy</span>
+                        <br>
+                        18% better accuracy on average across previously supported languages
+                    </p>
+                    <p>
+                        <span class="text-icon"><i class="i fa-solid fa-circle"></i></span>
+                        <span class="text-head">Even more supported languages</span>
+                        <br>
+                        16 new evaluated languages, with more to come (bringing the current total of officially supported languages to 44)
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6 text-content">
-          <h2>Monitor real-time sentiment</h2>
-          <p>Sentiment analysis is extremely useful at gaging the current views and opinions on a topic, however, it can
-            also be used to track the long term sentiment surrounding a particular topic or issue.</p>
-          <p>Monitoring this can show the relative importance and significance of a specific event.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Data Monitor End-->
+        </section>
+    <!--Data Header End-->
 
-  <!--Ai Power Section Start-->
+    <!--Data Monitor Start-->
+    <section class="data-monitor">
+        <div class="container">
+            <div class="row d-flex flex-row justify-content-center align-items-center">
+                <div class="col-md-6 image-content">
+                    <img src="image//sco.png" alt="">
+                </div>
+                <div class="col-md-6 text-content">
+                    <h2>Monitor real-time sentiment</h2>
+                    <p>Sentiment analysis is extremely useful at gaging the current views and opinions on a topic, however, it can also be used to track the long term sentiment surrounding a particular topic or issue.</p>
+                    <p>Monitoring this can show the relative importance and significance of a specific event.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+    <!--Data Monitor End-->
+
+    <!--Ai Power Section Start-->
   <div class="ai-wrapper">
     <div class="cont">
       <div class="row">
         <div class="col-md-12 text-center">
           <h2>AI-Powered Social Listening Features</h2>
-          <p>Get more time back in your day with comprehensive social listening insights throughout the entire platform.
-          </p>
+          <p>Get more time back in your day with comprehensive social listening insights throughout the entire platform.</p>
         </div>
       </div>
 
@@ -186,8 +180,7 @@
           <div class="a-card">
             <i class="i fa-solid fa-circle-plus"></i>
             <h3>Custom Topic Builder</h3>
-            <p>Keep a pulse on the conversations around your brand, products, competitors, or campaigns with
-              customizable, saveable searches.</p>
+            <p>Keep a pulse on the conversations around your brand, products, competitors, or campaigns with customizable, saveable searches.</p>
             <p><span><a href="#">See Topics Features <i class="fa-solid fa-arrow-right-long"></i></a></span></p>
           </div>
         </div>
@@ -205,18 +198,16 @@
           <div class="a-card">
             <i class="i fa-solid fa-users-rectangle"></i>
             <h3>Community</h3>
-            <p>Know exactly what’s happening within your community with social listening, sentiment insights and a
-              multi-channel inbox.</p>
+            <p>Know exactly what’s happening within your community with social listening, sentiment insights and a multi-channel inbox.</p>
             <p><span><a href="#">See Topics Features <i class="fa-solid fa-arrow-right-long"></i></a></span></p>
-          </div>
+        </div>
         </div>
 
         <div class="col-xl-4 col-md-6 col-sm-12">
           <div class="a-card">
             <i class="i fa-solid fa-user-pen"></i>
             <h3>User-Generated Content</h3>
-            <p>Reduce the time it takes to source high-quality UGC that will drive the highest engagement on your
-              channels.</p>
+            <p>Reduce the time it takes to source high-quality UGC that will drive the highest engagement on your channels.</p>
             <p><span><a href="#">See Topics Features <i class="fa-solid fa-arrow-right-long"></i></a></span></p>
           </div>
         </div>
@@ -225,18 +216,16 @@
           <div class="a-card">
             <i class="i fa-solid fa-table-columns"></i>
             <h3>Dashboards</h3>
-            <p>View sentiment and brand health reports alongside your most important metrics make strategic
-              decision-making a breeze.</p>
+            <p>View sentiment and brand health reports alongside your most important metrics make strategic decision-making a breeze.</p>
             <p><span><a href="#">See Topics Features <i class="fa-solid fa-arrow-right-long"></i></a></span></p>
-          </div>
+        </div>
         </div>
 
         <div class="col-xl-4 col-md-6 col-sm-12">
           <div class="a-card">
             <i class="i fa-solid fa-synagogue"></i>
             <h3>Competitive Insights</h3>
-            <p>Track how your competition is going to market and what’s happening in your industry to see how you stack
-              up.</p>
+            <p>Track how your competition is going to market and what’s happening in your industry to see how you stack up.</p>
             <p><span><a href="#">See Topics Features <i class="fa-solid fa-arrow-right-long"></i></a></span></p>
           </div>
         </div>
@@ -244,67 +233,49 @@
       </div>
       <div class="row m-3 text-content">
         <div class="col-md-12">
-          <h2>Public perception from Social Media- How it is done?</h2>
-          <div class="row text-content-border">
-            <div class="col-xl-6 mt-3">
-              <p><span class="text-icon"><i class="i fa-solid fa-circle"></i></span>Social Media is now the most popular
-                method of communication of brands and companies with their customers. For any sort of relevant
-                information and justified
-                <br>
-                <span class="text-icon"><i class="i fa-solid fa-circle"></i></span>opinion, people seek to social media
-                for clarification. When it comes to brands and companies, the public perception is generally the idea
-                people hold of that very
-                <br>
-                <span class="text-icon"><i class="i fa-solid fa-circle"></i></span>business and is a deterministic tool
-                for the people whether they want to engage themselves with it. It is the expressed perspective towards
-                the company by.
-              </p>
+            <h2>Public perception from Social Media- How it is done?</h2>
+            <div class="row text-content-border">
+                <div class="col-xl-6 mt-3" >
+                    <p><span class="text-icon"><i class="i fa-solid fa-circle"></i></span>Social Media is now the most popular method of communication of brands and companies with their customers. For any sort of relevant information and justified 
+                        <br>
+                        <span class="text-icon"><i class="i fa-solid fa-circle"></i></span>opinion, people seek to social media for clarification. When it comes to brands and companies, the public perception is generally the idea people hold of that very 
+                        <br>
+                        <span class="text-icon"><i class="i fa-solid fa-circle"></i></span>business and is a deterministic tool for the people whether they want to engage themselves with it. It is the expressed perspective towards the company by.</p>
+                </div>
+                <div class="col-xl-6 mt-3">
+                    <p><span class="text-icon"><i class="i fa-solid fa-circle"></i></span>Social media is the ultimate place that people turn to when they want to express their thoughts and opinions. It is also the place for people to lead a projected life. This may 
+                        <br>
+                        <span class="text-icon"><i class="i fa-solid fa-circle"></i></span>often be far from their reality. It is the place where intent can be found. For businesses, this can mean a lot. Through social media, they can identify the needs of 
+                        <br>
+                        <span class="text-icon"><i class="i fa-solid fa-circle"></i></span>the consumers and the way they think. If businesses can align their products and services with the aspirations of customers, people are more likely to resonate with it. 
+                        <br>
+                        <span class="text-icon"><i class="i fa-solid fa-circle"></i></span>In the past, there has always been a gap between intent and action. With social media, it can now be tracked and addressed. Once intent is known, businesses can.</p>
+                </div>
             </div>
-            <div class="col-xl-6 mt-3">
-              <p><span class="text-icon"><i class="i fa-solid fa-circle"></i></span>Social media is the ultimate place
-                that people turn to when they want to express their thoughts and opinions. It is also the place for
-                people to lead a projected life. This may
-                <br>
-                <span class="text-icon"><i class="i fa-solid fa-circle"></i></span>often be far from their reality. It
-                is the place where intent can be found. For businesses, this can mean a lot. Through social media, they
-                can identify the needs of
-                <br>
-                <span class="text-icon"><i class="i fa-solid fa-circle"></i></span>the consumers and the way they think.
-                If businesses can align their products and services with the aspirations of customers, people are more
-                likely to resonate with it.
-                <br>
-                <span class="text-icon"><i class="i fa-solid fa-circle"></i></span>In the past, there has always been a
-                gap between intent and action. With social media, it can now be tracked and addressed. Once intent is
-                known, businesses can.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
       <div class="row m-3 mb-5 text-content">
         <div class="col-md-12">
-          <h2>Data Analytics and Business Optimization Solutions</h2>
-          <h3 class="mt-3">What to expect?</h3>
-          <p>Efficient Data Handling: Streamlined data gathering, cleaning, and preparation for accuracy and
-            consistency.
-            Insightful Analysis: Thorough exploration of data to uncover valuable insights for decision-making.
-            Predictive Modeling: Development of predictive models to optimize processes and enhance customer
-            experiences.
-            Clear Communication: Visual data presentations to effectively communicate insights and recommendations.
-            Continuous Improvement: Ongoing refinement of analytics processes to adapt to evolving business needs.
-
-          </p>
+            <h2>Data Analytics and Business Optimization Solutions</h2>
+            <h3 class="mt-3">What to expect?</h3>
+            <p>Efficient Data Handling: Streamlined data gathering, cleaning, and preparation for accuracy and consistency.
+                Insightful Analysis: Thorough exploration of data to uncover valuable insights for decision-making.
+                Predictive Modeling: Development of predictive models to optimize processes and enhance customer experiences.
+                Clear Communication: Visual data presentations to effectively communicate insights and recommendations.
+                Continuous Improvement: Ongoing refinement of analytics processes to adapt to evolving business needs.
+            
+            </p>
         </div>
       </div>
 
     </div>
   </div>
   <!--Ai Power Section End-->
+    
+    <!--Main Content End-->
 
-  <!--Main Content End-->
-
-  <!--Footer Section End-->
-  <footer class="footer-section">
+<!--Footer Section End-->
+<footer class="footer-section">
     <div class="container">
       <div class="footer-cta pt-4 pb-3">
         <div class="row">
@@ -345,9 +316,7 @@
               <div class="footer-logo pt-4 pb-4">
                 <a href="index.html"><img src="image/logo.png" class="img-fluid" alt="logo" /></a>
               </div>
-              <p style="color: #fff;">We believe digital freedom is essential to make lives better. We exist to be the
-                united movement against all digital dangers, fighting for what’s right, winning against the bad
-                guys..everyday; we're dreaming to secure the ICT revolution.</p>
+              <p style="color: #fff;">We believe digital freedom is essential to make lives better. We exist to be the united movement against all digital dangers, fighting for what’s right, winning against the bad guys..everyday; we're dreaming to secure the ICT revolution.</p>
               <div class="footer-social-icon pb-4">
                 <span>Follow us :</span>
                 <a href="#"><i class="i1 fab fa-facebook-f facebook-bg"></i></a>
@@ -356,40 +325,40 @@
               </div>
             </div>
           </div>
-
-          <div class="col-xl-5 col-lg-5 col-md-9 col-sm-8 mb-30 pt-4 pb-4">
+          
+          <div class="col-xl-5 col-lg-5 col-md-6 mb-30 pt-4 pb-4">
             <div class="row">
-              <div class="col-md-6">
-                <div class="footer-widget">
-                  <div class="footer-widget-heading">
-                    <h3>Service Links</h3>
-                  </div>
-                  <ul>
-                    <li><a href="ptaas.html">PTaas</a></li>
-                    <li><a href="#">Red Teaming</a></li>
-                    <li><a href="data_driven.html">Data Driven Technology</a></li>
-                    <li><a href="#">Security Operations Center</a></li>
-                    <li><a href="#">Data Loss Prevention > Partners</a></li>
-                    <li><a href="#">End Point Security</a></li>
-                  </ul>
+                <div class="col-md-6">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                          <h3>Service Links</h3>
+                        </div>
+                        <ul>
+                          <li><a href="#">PTaas</a></li>
+                          <li><a href="#">Red Teaming</a></li>
+                          <li><a href="#">Data Driven Technology</a></li>
+                          <li><a href="#">Security Operations Center</a></li>
+                          <li><a href="#">Data Loss Prevention > Partners</a></li>
+                          <li><a href="#">End Point Security</a></li>
+                        </ul>
+                      </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="footer-widget">
-                  <div class="footer-widget-heading">
-                    <h3>Useful Links</h3>
+                <div class="col-md-6">
+                    <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                        <h3>Useful Links</h3>
+                      </div>
+                      <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 mb-50 pt-4 pb-4">
+          <div class="col-xl-3 col-lg-3 col-md-6 mb-50 pt-4 pb-4">
             <div class="footer-widget">
               <div class="footer-widget-heading">
                 <h3>Supported by,</h3>
@@ -434,6 +403,7 @@
   <!--Slick JS-->
   <script src="js/slick.min.js"></script>
   <!--Typed JS-->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <!--Font Awesome JS-->
   <script src="js/all.min.js"></script>
   <!--Bootstrap JS-->
@@ -441,12 +411,66 @@
   <!--My Style JS-->
   <script src="js/app.js"></script>
   <script>
-    window.addEventListener("scroll", function () {
+    window.addEventListener("scroll", function(){
       var header = document.querySelector('.header');
-      header.classList.toggle("sticky", window.scrollY > 0);
+      header.classList.toggle("sticky",window.scrollY > 0);
     });
   </script>
+  <script>
+    $(document).ready(function () {
+      $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3
+          }
+        }]
+      });
 
+      $('.acknowledgments-logos').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1800,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3
+          }
+        }]
+      });
+    });
+
+  </script>
+  <script>
+    var typed = new Typed('.typed-text', {
+      strings: ["YOUR DIGITAL WORLD", "Continually Pioneering Cybersecurity Solutions."],
+      typeSpeed: 150,
+      backSpeed: 150,
+      fadeOut: true,
+      loop: true
+    });
+  </script>
 </body>
 
 </html>
