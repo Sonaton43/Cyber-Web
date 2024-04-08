@@ -21,6 +21,9 @@ body {
 /* Apply Roboto font to your elements */
 font-family: 'Proxima Nova Condensed', sans-serif;
 }
+.primary-color{
+  color: #3ece1a;
+}
 
 /*==============Nav Menu Section CSS Start==============*/
 .header {
@@ -1730,3 +1733,161 @@ ul {
   }
 }
 /*==============Ptaas Section CSS End================*/
+/*==============Red Teaming Section CSS End================*/
+.red-teaming{
+  position: relative;
+  background-color: #000;
+  margin: 0;
+  padding: 50px 0 20px 0;
+}
+.red-teaming::before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.4;
+  background: url(../image/Red-teaming.png) no-repeat center center;
+  background-size: cover;
+}
+.red-teaming .text-content{
+  position: relative;
+  padding-right: 10%;
+}
+.red-teaming .text-content h2{
+  color: var(--primary-text);
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 48px;
+}
+.red-teaming .text-content p{
+  color: var(--primary-text);
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.red-teaming .image-content img{
+  position: relative;
+  padding: 50px;
+  width: 80%;
+  height: 80%;
+}
+
+.security-info{
+  margin: 0;
+  padding: 50px 0;
+}
+.security-info h2{
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.security-info p{
+  font-size: 1.3em;
+  font-weight: 400;
+}
+.security-info .image-content img{
+  padding: 50px;
+  width: 100%;
+}
+
+.w-is-redteam{
+  position: relative;
+  background-color: #000;
+  margin: 0;
+  padding: 50px 0;
+}
+.w-is-redteam::before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.4;
+  background: url(../image/Red-teaming.png) no-repeat center center;
+  background-size: cover;
+}
+.w-is-redteam h2{
+  font-size: 3.5rem;
+  font-weight: 600;
+  position: relative;
+  color: var(--primary-text);
+}
+.w-is-redteam p{
+  font-size: 1.3em;
+  font-weight: 400;
+  position: relative;
+  color: var(--primary-text);
+}
+
+.mandiant{
+  margin: 0;
+  padding: 50px 0;
+}
+.mandiant h2{
+  font-size: 3rem;
+  font-weight: 600;
+  position: relative;
+  color: var(--primary-color);
+}
+.mandiant .mandiant-text h3{
+  font-size: 2.5em;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.mandiant .mandiant-text{
+  padding: 20px;
+}
+.mandiant .mandiant-text p{
+  font-size: 1.3em;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+.mandiant .mandiant-text span{
+  font-size: 10px;
+  align-items: center;
+}
+.mandiant .mandiant-text p span{
+  font-size: 10px;
+  align-items: center;
+  position: relative;
+}
+.mandiant .mandiant-text .text{
+  position: absolute;
+  margin-top: -27px;
+  padding-left: 20px;
+}
+.mandiant .mandiant-img{
+  border-radius: 10px;
+}
+.mandiant .mandiant-img img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.approach{
+  margin: 0;
+  padding: 50px 0;
+}
+.approach h2{
+  font-size: 3.5rem;
+  font-weight: 600;
+  position: relative;
+  color: var(--primary-color);
+}
+.approach h4{
+  font-size: 1.4em;
+  font-weight: 600;
+  color: var(--primary-color);
+  line-height: 20px;
+}
+.approach p{
+  font-size: 1.1em;
+  font-weight: 300;
+  color: var(--primary-color);
+  line-height: 25px;
+}
