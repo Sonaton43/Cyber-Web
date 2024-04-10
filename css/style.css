@@ -4,6 +4,7 @@
   --secondary-color: #3ece1a;
   --third-color: #086416;
   --primary-text: #fff;
+  --primary2-color: #000d4b;
 }
 * {
   margin: 0;
@@ -24,6 +25,9 @@ font-family: 'Proxima Nova Condensed', sans-serif;
 .primary-color{
   color: #3ece1a;
 }
+.red-team {
+  color: #cc2828;
+}
 
 /*==============Nav Menu Section CSS Start==============*/
 .header {
@@ -38,7 +42,7 @@ font-family: 'Proxima Nova Condensed', sans-serif;
   transition: background-color 0.4s ease-in-out;
 }
 .sticky{
-  background: var(--primary-color);
+  background: var(--primary2-color);
 }
 .header .content {
   display: flex;
@@ -115,7 +119,7 @@ font-family: 'Proxima Nova Condensed', sans-serif;
   left: 0;
   width: 280px;
   padding: 1px 0;
-  background-color: var(--secondary-color);
+  background-color: var(--primary2-color);
   color: var(--primary-text);
   z-index: 1;
   transform-origin: top;
@@ -146,7 +150,7 @@ font-family: 'Proxima Nova Condensed', sans-serif;
 }
 .header .menu .sub-menu li:hover > a {
   background-size: 100% 2px;
-  color: var(--primary-text);
+  color: var(--secondary-color);
   background-color: hsla(0, 0%, 100%, 0.15);
   transition: 0.9s ease;
 }
@@ -164,7 +168,7 @@ font-family: 'Proxima Nova Condensed', sans-serif;
     top: 0;
     width: 320px;
     height: 100%;
-    background-color: var(--secondary-color);
+    background-color: var(--primary2-color);
     padding: 15px 20px 20px;
     overflow-y: auto;
     z-index: 1;
@@ -273,6 +277,7 @@ font-family: 'Proxima Nova Condensed', sans-serif;
     visibility: visible;
     padding: 0;
     transition: none;
+    background: var(--primary2-color);
     box-shadow: none;
     width: 100%;
     display: none;
@@ -285,6 +290,9 @@ font-family: 'Proxima Nova Condensed', sans-serif;
   }
   .header .menu .sub-menu a {
     padding: 12px 0 12px 15px;
+  }
+  .header .menu .sub-menu li:hover > a {
+    color: var(--primary-text);
   }
   .header .menu .sub-menu span {
     background-image: none;
@@ -311,6 +319,32 @@ font-family: 'Proxima Nova Condensed', sans-serif;
   }
   .header-right .open-menu-btn .line-3 {
     transform: translateY(8px);
+  }
+  .close-menu-btn{
+    left: 20%;
+  }
+}
+@media(max-width: 668px){
+  .header .menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary2-color);
+    padding: 15px 20px 20px;
+    overflow-y: auto;
+    z-index: 1;
+    transform: translateX(100%);
+    display: block;
+  }
+  .close-menu-btn{
+    left: 60%;
+  }
+}
+@media(max-width: 400px){
+  .close-menu-btn{
+    left: 50%;
   }
 }
 /*==============Nav Menu Section CSS Start==============*/
@@ -390,7 +424,7 @@ section {
   text-decoration: none; /* Remove underlines */
   cursor: pointer; /* Change cursor appearance */
   color: var(--primary-text);
-  background-color: var(--secondary-color);
+  background-color: var(--primary2-color);
   background-image: linear-gradient(#fff, #fff);
 }
 .box .btn2 {
@@ -460,12 +494,16 @@ section {
   margin:  0;
 }
 .wrapper h2 {
-  color: var(--primary-color);
-  font-size: 3em;
+  color: var(--primary2-color);
+  font-size: 6vw;
   margin: 30px 0 10px 0;
   text-align: center;
   font-weight: 500;
   text-transform: uppercase;
+}
+.wrapper p {
+  color: var(--primary-color);
+  font-size: 18px;
 }
 .wrapper .cont{
   margin: auto;
@@ -492,7 +530,7 @@ section {
   text-transform: uppercase;
 }
 .wrapper .s-card .i{
-  color: var(--secondary-color);
+  color: var(--primary2-color);
   font-size: 38px;
   padding: 5px 0;
 }
@@ -503,14 +541,14 @@ section {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  color: var(--secondary-color);
+  color: var(--primary2-color);
 }
 .wrapper .s-card:hover .i,
 .wrapper .s-card:hover p span a{
   color: var(--primary-text);
 }
 .wrapper .s-card:hover{
-  background: var(--secondary-color);
+  background: var(--primary2-color);
   color: var(--primary-text);
 }
 .trust-box {
@@ -518,7 +556,7 @@ section {
   margin: 0 200px;
   padding: 10px;
   background-color: var(--primary-text);
-  border-bottom: 4px solid var(--secondary-color);
+  border-bottom: 4px solid var(--primary2-color);
   box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.3);
   margin-bottom: 50px;
 }
@@ -526,10 +564,10 @@ section {
   padding: 5px;
   justify-content: center;
   text-align: center;
-  color: var(--secondary-color);
+  color: var(--primary2-color);
 }
 .t-card:not(:last-child) {
-  border-right: 2px solid var(--secondary-color);
+  border-right: 2px solid var(--primary2-color);
 }
 .t-card p {
   margin-top: 5px;
@@ -555,7 +593,7 @@ section {
 
 /*==============Approch Section CSS Start================*/
 .approch{
-  background-color: var(--primary-color);
+  background-color: var(--primary2-color);
   height: 100%;
   width: 100%;
 }
@@ -601,7 +639,7 @@ section {
 
 /*==============Our Partner Section CSS Start================*/
 .partner{
-  background: var(--primary-color);
+  background: var(--primary2-color);
   padding-bottom: 10px;
 }
 .partner .container{
@@ -752,7 +790,7 @@ section {
   padding-top: 50px;
   text-align: center;
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--primary2-color);
 }
 .product .imgwrapper{
   overflow: hidden;
@@ -827,7 +865,7 @@ section {
 
 /*==============Our Vision Section CSS End================*/
 .vision{
-  background: var(--primary-color);
+  background: var(--primary2-color);
   max-height: 400px;
   position: relative;
   margin-top: 100px;
@@ -971,7 +1009,7 @@ section {
   padding-top: 20px;
   text-align: center;
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--primary2-color);
 }
 .acknowledgments .container p{
   text-align: center;
@@ -1122,7 +1160,7 @@ ul {
   padding: 0px;
 }
 .footer-section {
-  background: var(--primary-color);
+  background: var(--primary2-color);
   position: relative;
 }
 .footer-cta {
@@ -1200,14 +1238,14 @@ ul {
   color: var(--primary-text);
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   position: relative;
 }
 .footer-widget-heading h3::before {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -15px;
+  bottom: -8px;
   height: 2px;
   width: 50px;
   background: var(--secondary-color);
@@ -1358,7 +1396,7 @@ ul {
   position: relative;
   background-color: #000;
   margin: 0;
-  padding: 80px 0;
+  padding: 120px 0;
 }
 .data-driven::before{
   content: ' ';
@@ -1411,10 +1449,10 @@ ul {
   padding-right: 8%;
 }
 .powerful-data .text-content h2{
-  color: var(--primary-color);
+  color: var(--primary2-color);
   font-size: 3.5rem;
   font-weight: 600;
-  line-height: 50px;
+  line-height: 55px;
 }
 .powerful-data .text-content p{
   color: var(--primary-color);
@@ -1450,8 +1488,8 @@ ul {
   background: var(--primary-text);
 }
 .data-monitor .text-content h2{
-  color: var(--primary-color);
-  font-size: 3.5rem;
+  color: var(--primary2-color);
+  font-size: 3rem;
   font-weight: 600;
   line-height: 48px;
 }
@@ -1470,11 +1508,11 @@ ul {
   margin:  0;
 }
 .ai-wrapper h2 {
-  color: var(--primary-color);
+  color: var(--primary2-color);
   font-size: 3em;
   margin: 30px 0 10px 0;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .ai-wrapper .cont{
@@ -1494,10 +1532,11 @@ ul {
   font-size: 1.5rem;
   font-weight: 600;
   padding: 5px 0;
+  color: var(--primary2-color);
   text-transform: uppercase;
 }
 .ai-wrapper .a-card .i{
-  color: var(--secondary-color);
+  color: var(--primary2-color);
   font-size: 38px;
   padding: 5px 0;
 }
@@ -1508,13 +1547,13 @@ ul {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  color: var(--secondary-color);
+  color: var(--primary2-color);
 }
 .ai-wrapper .text-content .text-content-border{
   display: flex;
 }
 .ai-wrapper .text-content h2{
-  color: var(--primary-color);
+  color: var(--primary2-color);
   font-size: 3em;
   margin: 30px 0 10px 0;
   text-align: center;
@@ -1526,13 +1565,13 @@ ul {
   font-weight: 400;
 }
 .ai-wrapper .text-content h3{
-  color: var(--primary-color);
+  color: var(--primary2-color);
   text-align: left;
   font-size: 2.5em;
   font-weight: 400;
 }
 .ai-wrapper .text-content p .text-icon{
-  color: var(--secondary-color);
+  color: var(--primary2-color);
   font-size: 0.8em;
   margin-left: -30px;
   margin-right: 15px;
@@ -1608,14 +1647,14 @@ ul {
   width: 100%;
   height: 100%;
 }
-/*---Ptaas content--*/
+/*---Ptaas What... content--*/
 .whatis-ptaas{
   margin: 0;
   padding: 50px 0;
 }
 .whatis-ptaas h2{
   font-size: 3em;
-  color: var(--primary-color);
+  color: var(--primary2-color);
   line-height: 50px;
   font-weight: 600;
 }
@@ -1634,7 +1673,7 @@ ul {
 }
 .whatis-ptaas p span a{
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--primary2-color);
   font-size: 1.1em;
 }
 /*---continue-ptaas--*/
@@ -1644,7 +1683,7 @@ ul {
 }
 .continue-ptaas h2{
   font-size: 3em;
-  color: var(--primary-color);
+  color: var(--primary2-color);
   line-height: 50px;
   font-weight: 600;
 }
@@ -1658,7 +1697,7 @@ ul {
   width: 100%;
   height: 100%;
 }
-/*Ptaas Continue*/
+/*Ptaas Process*/
 .ptaas-process{
   position: relative;
   background-color: #000;
@@ -1682,7 +1721,7 @@ ul {
   text-align: center;
   font-size: 3em;
   position: relative;
-  color: var(--primary-text);
+  color: var(--secondary-color);
   font-weight: 600;
 }
 .ptaas-process img{
@@ -1710,7 +1749,7 @@ ul {
   font-weight: 400;
 }
 .ai-wrapper .custom-color{
-  color: var(--primary-color);
+  color: var(--primary2-color);
 }
 
 
@@ -1782,6 +1821,7 @@ ul {
 .security-info h2{
   font-size: 3.5rem;
   font-weight: 600;
+  color: var(--primary2-color);
 }
 .security-info p{
   font-size: 1.3em;
@@ -1823,7 +1863,7 @@ ul {
   position: relative;
   color: var(--primary-text);
 }
-
+/* 
 .mandiant{
   margin: 0;
   padding: 50px 0;
@@ -1832,12 +1872,12 @@ ul {
   font-size: 3rem;
   font-weight: 600;
   position: relative;
-  color: var(--primary-color);
+  color: var(--primary2-color);
 }
 .mandiant .mandiant-text h3{
   font-size: 2.5em;
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--primary2-color);
 }
 .mandiant .mandiant-text{
   padding: 20px;
@@ -1867,7 +1907,7 @@ ul {
 .mandiant .mandiant-img img{
   width: 100%;
   border-radius: 10px;
-}
+} */
 
 .approach{
   margin: 0;
@@ -1877,12 +1917,12 @@ ul {
   font-size: 3.5rem;
   font-weight: 600;
   position: relative;
-  color: var(--primary-color);
+  color: var(--primary2-color);
 }
 .approach h4{
   font-size: 1.4em;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--primary2-color);
   line-height: 20px;
 }
 .approach p{
@@ -1904,7 +1944,7 @@ ul {
   font-size: 3.5rem;
   font-weight: 600;
   position: relative;
-  color: var(--primary-color);
+  color: var(--primary2-color);
   text-align: center;
 }
 .benifits .benifits-wrapper img{
@@ -1914,4 +1954,27 @@ ul {
 }
 .benifits .benifits-wrapper:hover img{
   transform: scale(1.1);
+}
+
+@media(max-width:991px){
+  .red-teaming{
+    margin: 0;
+    padding: 120px 50px 30px;
+  }
+  .security-info{
+    margin: 0;
+    padding: 50px 30px;
+  }
+  .w-is-redteam{
+    margin: 0;
+    padding: 50px 30px;
+  }
+  .approach{
+    margin: 0;
+    padding: 50px 30px;
+  }
+  .benifits{
+    margin: 0;
+    padding: 50px 30px;
+  }
 }
